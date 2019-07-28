@@ -7,7 +7,7 @@ import App from "./App";
 it("renders a welcome message", () => {
     const { getByText } = render(<App />);
 
-    const welcomeMessage = getByText("Learn React");
+    const welcomeMessage = getByText("Welcome to Joe Wroe's Blog");
 
     expect(welcomeMessage).toBeInTheDocument();
 });
