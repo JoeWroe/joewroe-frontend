@@ -8,7 +8,7 @@ clean:		## ~~~~~~>	Cleans the build directory.
 	@rm -rf ./build
 
 lint:		## ~~~~~~>	Lint everything.
-	@echo "Linter engaged... 🚔"
+	@echo "Woop, Woop, it's the sound of the Po-lint... 🚔"
 	@tslint ./src/*.tsx
 	@echo "Linting completed successfully, you are free to go. 🤘"
 
