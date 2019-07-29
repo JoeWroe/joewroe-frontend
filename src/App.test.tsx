@@ -4,10 +4,10 @@ import { render } from "@testing-library/react";
 
 import App from "./App";
 
-it("renders a welcome message", () => {
+it("displays the application header", () => {
     const { getByText } = render(<App />);
 
-    const welcomeMessage = getByText("Welcome to Joe Wroe's Blog");
+    const headerText = getByText("Joe Wroe's Blog");
 
-    expect(welcomeMessage).toBeInTheDocument();
+    expect(headerText).toBeInTheDocument();
 });

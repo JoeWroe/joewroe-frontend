@@ -1,13 +1,11 @@
 import React from "react";
 
+import Header from "./components/Header"
+
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to Joe Wroe's Blog
-        </p>
-      </header>
+        <Header />
     </div>
   );
 };
