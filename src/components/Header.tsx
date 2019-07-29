@@ -1,9 +1,15 @@
 import React from "react";
 
+import RainbowHeader from "../higher-order-components/RainbowHeader"
+
 import "./Header.scss"
 
 const Header = () => {
-    return <h1 className="header">Joe Wroe's Blog</h1>
+    return (
+        <div className="header">
+            <h1 className="headerText">Joe Wroe's Blog</h1>
+        </div>
+    )
 }
 
-export default Header
+export default RainbowHeader(Header)
