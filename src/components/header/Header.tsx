@@ -1,6 +1,6 @@
 import React from "react";
 
-import RainbowHeader from "../higher-order-components/RainbowHeader"
+import RainbowHeader from "../../higher-order-components/rainbowHeader/RainbowHeader"
 
 import "./Header.scss"
 
