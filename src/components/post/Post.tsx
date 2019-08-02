@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import "./Post.scss"
+
 type PostState = {
     title: String
     body: String
@@ -19,18 +21,18 @@ class Post extends Component<{}, PostState> {
 
     render() {
         const post = this.state != null ? (
-            <div>
-                <h1>{ this.state.title }</h1>
-                <p>{ this.state.body }</p>
+            <div className="post-text">
+                <h1 className="post-header">{ this.state.title }</h1>
+                <p className="post-body">{ this.state.body }</p>
             </div>
         ) : (
-            <div>
-                <p>Loading Posts...</p>
+            <div className="post-text">
+                <p className="post-body">Loading Post...</p>
             </div>
         )
 
         return (
-            <div>{ post }</div>
+            <div className="post">{ post }</div>
         )
     }
 }

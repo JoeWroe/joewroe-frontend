@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+$border: 0.15em;
+$header: 3em;
+$margin: 4em;
+
+$page-content: calc((#{$header} + (#{$border} + #{$margin}) * 2));
+
+.post {
+    float: right;
+    min-width: 46vw;
+
+    .post-text {
+        border-bottom: $border solid black;
+        border-top: $border solid black;
+        margin: $margin 0;
+        margin-right: $margin;
+        max-height: calc(99vh - #{$page-content});
+        min-height: calc(100vh - #{$page-content});
+
+        .post-header {
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .post-body {
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
